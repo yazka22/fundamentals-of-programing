@@ -1,0 +1,26 @@
+int main(void)
+{
+    int x1,x2,x3,x4,x5,aux;
+    printf("Introduceti x1 ");
+    scanf("%i",&x1);
+    printf("Introduceti x2 ");
+    scanf("%i",&x2);
+    printf("Introduceti x3 ");
+    scanf("%i",&x3);
+    printf("Introduceti x4 ");
+    scanf("%i",&x4);
+    printf("Introduceti x5 ");
+    scanf("%i",&x5);
+    aux=x1;
+    x1=x2;
+    x2=x3;
+    x3=x4;
+    x4=x5;
+    x5=aux;
+    printf("noua valare a lui x1 este %i\n",x1);
+    printf("noua valare a lui x2 este %i\n",x2);
+    printf("noua valare a lui x3 este %i\n",x3);
+    printf("noua valare a lui x4 este %i\n",x4);
+    printf("noua valare a lui x5 este %i\n",x5);
+    return 0;
+}

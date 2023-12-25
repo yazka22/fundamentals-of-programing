@@ -1,0 +1,50 @@
+void citire_sir(int dim,int s[])
+
+{
+    int i;
+    for(i=0;i<dim;i++);
+    {
+        printf("s[%d]=",i+1);
+        scanf("%d",&s[i]);
+    }
+}
+void afisare_sir(int dim,int s[])
+{int i;
+for(i=0;i<dim;i++)
+{
+    printf("%d, ",s[i]);
+}
+printf("\n");
+
+}
+int prim(int x)
+{
+    int i;
+    for(i=2;i<x/2+1;i++)
+        if(x%i==0)return 0;
+    return 1;
+}
+int main()
+{
+int n,i,k=0;
+printf("Cate elemente are sirul ?");
+scanf("%d",&n);
+int sir[n];
+citire_sir(n,sir);
+system("CLS");
+printf("Sirul initial este :\n");
+afisare_sir(n,sir);
+k=numar_prim(n,sir);
+if(k>0)
+{
+    int sir_prim[k];
+    k=0;
+    for(i=0;i<n;i++)
+    {
+        if(prim(sir[i])=1){
+            sir_prim[k++]=sir[i];
+        }
+    }
+}
+        return 0;
+}

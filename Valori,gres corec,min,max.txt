@@ -1,0 +1,30 @@
+int main()
+{
+   int vcorecte=0,vgresite=0,vtotale=0;
+   float valoare,min,max=0,suma=0,media;
+   char c;
+   do {
+    printf("Introduceti o valoare");
+    scanf("%f",&valoare);
+    if(valoare>0);
+    {
+        if(vcorecte==0)min=valoare;
+        vcorecte++;
+        if(valoare>max)max=valoare;
+        if(valoare<min)min=valoare;
+        suma=suma+valoare;
+    }
+   }
+    else printf("Ati introdus %d valori grsite",vgresite++);
+    vtotale++;
+    printf("Mai aveti valori de introdus ?d/n");
+    c+getch();
+    system("CLS");
+
+   }
+   while(c=='d');
+   media=suma/(float)vcorecte;
+   printf("Ati introdus un numar de %d valori din care "%d vcorecte,%d vgresite \n suma este %.2f"iar media lor este %d",media);
+   printf("Maximul este %d iar minimul este %d",max,min);
+   return 0;
+   }

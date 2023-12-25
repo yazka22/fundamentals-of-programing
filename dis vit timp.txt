@@ -1,0 +1,14 @@
+int main()
+{
+    {float d,h,v;
+    printf("Care este distanat parcursa de brasca testoasa?\n");
+    scanf("%f",&d);
+    d=d*1000;
+    printf("distanta este de %f metri\n",d);
+    printf("Care este timpul in care broasaca testoasa a parcurs aceasta distanta \n?");
+    scanf("%f",&h);
+    h=h*3600;
+    printf("timpul este de %f secunde\n",h);
+    printf("Viteza cu care se deplaseaza broasca testoasa este de %f m/s\n",d/h);
+    return 0;}
+}

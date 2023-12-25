@@ -1,0 +1,18 @@
+int main()
+{
+    float depunere,suma=0,media;
+    char c='d';
+    int contor=0;
+    while (c=='d')
+    {
+        printf("Introduceti valoarea depunerii");
+        scanf("%f",&depunere);
+        suma+=depunere;
+        contor++;
+        printf("mai aveti valori de introdus ?d/n\n");
+        scanf("%s",&c);
+
+    }
+    media=suma/(float)contor;
+    printf("Au fost facute %f depuneri in valoare de %f.\nMedia este %f",contor,suma,media);
+}

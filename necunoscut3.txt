@@ -1,0 +1,37 @@
+int main()
+{
+    int i;
+    for(i=0;i<dim;i++)
+    {
+        printf("sir[%d]=",i);
+        scanf("%d",&sir[i]);
+    }
+    system("CLS");
+}
+void afisare(int dim,int sir[])
+{
+    int i;
+    for(i=0;i<dim;i++){
+        printf("%d, ",sir[i]);
+    }
+    printf("\n");
+}
+int main()
+{
+    int n,i,j,aux;
+    printf("Cate elemente are sirul ?");
+    scanf("%d",&n);
+    int sir[n];
+    citire(n,sir);
+    printf("Sirul initial este :");
+    afisare(n,sir);
+    for(i=0;i<n-1;i++){
+        for(j=i+1;j<n;j++){
+            if(sir[i]>sir[j]){aux=sir[i];sir[i]=sir[j];sir[j]=aux;}
+        }
+    }
+
+printf("Sirul ordonat este :");
+afisare(n,sir);
+return 0;
+}

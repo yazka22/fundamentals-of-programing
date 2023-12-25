@@ -1,0 +1,12 @@
+int main()
+{
+    int x,pare=0,i;
+    for(i=1;i<=10;i++)
+    {
+        printf("Introduceti valoarea %d\n",i);
+        scanf("%d",&x);
+        if(x%2==0)pare++;
+    }
+    printf("Au fost introduse %d numere pare,%d numere impare\n",pare,10-pare);
+    return 0;
+}

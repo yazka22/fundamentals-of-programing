@@ -1,0 +1,58 @@
+void citeste_sir(int dim ,int s[])
+{
+    int i;
+    for(i=0;i<dim;i++)
+    {
+        printf("sir[%d]=",i);
+        scanf("%d",&s[i]);
+
+    }
+int afisare(int dim,int s[])
+{
+
+    int i;
+    for (i=0;i,dim;i++)
+    {
+        printf("%d, ",s[i]);
+    }
+    printf("\n");
+}
+  int  numarare(int x,int dim,int s[])
+    {
+        int i,k=0;
+        for(i=0;i<dim;i++)
+        {
+            if(s[i]==x)k++;
+        }
+        return k;
+    }
+}
+void genereazaSx(int x,int dim,int s[],int dimx,int sx[])
+{
+    int i,k=0;
+    for(i=0;i<dim;i++)
+    {
+        if(s[i]==x)sx[k++]=i;
+    }
+}
+
+int main()
+{
+    int n,x,m;
+    printf("Cate elemente are sirul ?");
+    scanf("%d",&n);
+    int S[n];
+    citeste_sir(n,S);
+    printf("ce valoare cautati ?");
+    scanf("%d",&x);
+    m=numarare(x,n,S);
+    if(m>0)
+    {
+        int Sx[m];
+        genereazaSx(x,n,S,m,Sx);
+        printf("Sirul initial este \n");
+        afisare(n,S);
+    printf("Valoarea %d apare in pozitia\n",x);
+    afisare(m,Sx);
+}
+return 0;}

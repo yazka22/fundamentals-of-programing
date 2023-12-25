@@ -1,0 +1,19 @@
+int main()
+{
+    float  a,b,c,min,max;
+    printf("Introduceti primul numar\n");
+    scanf("%f",&a);
+    printf("Introduceti al treilea numar\n ");
+    scanf("%f",&b);
+    printf("Introduceti al treilea numar \n");
+    scanf("%f",&c);
+    min=a;
+    if(b<min)min=b;
+    if(c<min)min=c;
+    printf("Minimul dintre %f ,%f si %f este %f\n",a,b,c,min);
+    max=a;
+    if(b>max)max=b;
+    if(c>max)max=c;
+    printf("Maximul dintre %f,%f si %f este %f ",a,b,c,max);
+    return 0;
+}

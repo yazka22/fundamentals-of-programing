@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float main()
+{   float a,p,r;
+    printf("Introduceti raza\n");
+    scanf("%f",&r);
+    printf("Aria cercului este %f\n",M_PI*r*r);
+    printf("Perimetrul cercului este %f\n",2*M_PI*r);
+    return 0;
+}

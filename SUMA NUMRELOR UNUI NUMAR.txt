@@ -1,0 +1,23 @@
+int main()
+{
+    int nr,i,m=1,s=0,z=0,aux;
+do
+    {
+        printf("Introduceti un numar:");
+        scanf("%d",&nr);
+    }
+while (nr<1000);
+do
+{
+    s+=nr%10;
+    nr=nr/10;
+    if(nr%10==0)z++;
+}
+while(nr!=0);
+printf("Are %d zerouri si suma este %d",z,s);
+if (aux%s==0)
+    printf("%d este divizorul numarului %d",s,aux);
+return 0;
+}
+
+

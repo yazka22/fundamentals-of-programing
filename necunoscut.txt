@@ -1,0 +1,24 @@
+int main()
+{
+
+    int sir[100],n,i=3,k=2,j;
+    int flag=1;
+    printf("Cat este n\n");
+    scanf("%d",&n);
+    while(k<n)
+    {
+        flag=1;
+        for(j=3;j<i/2+1;j++)
+        {
+            if(i%j==0)
+            {flag=0;
+                j=i;}
+        }
+        if(flag==1)
+
+    {sir[k++]=1;
+    printf("%d, ",i);
+}
+i++;}
+return 0;
+}

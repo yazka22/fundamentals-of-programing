@@ -1,0 +1,25 @@
+nt main()
+{
+    float a,c,b,maxim;
+    printf("Introduceti primul numar");
+    scanf("%f",&a);
+    printf("Introduceti al doilea numar");
+    scanf("%f",&b);
+    printf("Introduceti al treilea numar");
+    scanf("%f",&c);
+    maxim=a;
+    if(b>maxim) maxim=b;
+    if(c>maxim) maxim=c;
+    printf("Mximul dintre %.2f ,%.2f si %.2f este %.2f",a,b,c,maxim);
+   if(maxim<a+c+b-maxim)
+   {
+       printf("\n Triunghiul este ");
+       if(a!=b && a!=c && b!=c)printf("Oarecare\n");
+       else{
+        if(a==b && b==c) printf("Echilateral\n");
+        else
+            if(a==b || a==c || b==c) printf("Isoscel\n");
+       }
+   }
+   else printf("Nu avem triunghi\n");
+   return 0;

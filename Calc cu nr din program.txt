@@ -1,0 +1,12 @@
+int main()
+{
+    float a,b ;
+    printf("Introduceti primul numar \n");
+    scanf("%f",&a);
+    printf("Introduceti al doilea numar \n");
+    scanf("%f",&b);
+    printf("Produsul numerelor %f si %f este %f\n",a,b,a*b);
+    printf("Suma numerelor %f si %f este %f \n",a,b,a+b);
+    printf("Diferenta numerelor %f si %f este %f \n",a,b,a-b);
+    printf("Catul numerelor %f si %f este %f\n",a,b,a/b );
+}

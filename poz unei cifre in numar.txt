@@ -1,0 +1,16 @@
+int main()
+{
+    int sir[10]={1,3,6,4,8,7,4,9,7,4},i,x,k=0;
+    printf("Sirul este :1,3,6,4,8,7,4,9,7,4\n");
+    printf("Introduceti numarul cautat");
+    scanf("%d",&x);
+    printf("Am gasit elementul in pozitia");
+    for(i=0;i<10;i++)
+        if (x==sir[i])
+    {
+        printf("%d, ",i+1);
+        k++;
+    }
+    printf("Valoarea %d apare de %d ori ",x,k);
+    return 0;
+    }

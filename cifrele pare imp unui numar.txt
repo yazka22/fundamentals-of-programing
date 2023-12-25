@@ -1,0 +1,41 @@
+int main()
+{
+    int nr,par=0,impar=0,a;
+    printf("Introduceti un numar");
+    scanf("%d",&nr);
+    while (nr!=0)
+    {
+        printf("%d\n",nr%10);
+        if((nr%10)%2==0) par++;
+        nr=nr/10;
+
+    }
+    printf("Numarul are %d cifre pare si %d cifre impare\n",par,impar);
+    return 0;
+}
+
+
+int main()
+{
+    int nr,par=0,impar=0,a;
+    printf("Introduceti un numar");
+    scanf("%d",&nr);
+    while(nr!=0)
+    {
+        a=nr%10;
+        printf("%d\n",a);
+        switch(a)
+        {
+        case 0:case 2:case 4:case 6:case 8:
+            par++;
+            break;
+        default:
+            impar++;
+            break;
+        }
+        nr=nr/10;
+
+    }
+    printf("Numarul are %d cifre pare si %d cifre impare \n",par,impar);
+    return 0;
+}

@@ -1,0 +1,53 @@
+int main()
+{
+    float sir[10],suma=0,media;
+    int i;
+    printf("Intoduceti elementele sirului\n");
+    for (i=0;i<10;i++)
+    {
+        printf("Elementul %d este ",i);
+        scanf("%f",&sir[i]);
+        suma=suma+sir[i];
+    }
+    media =suma/10;
+    system("CLS");
+    printf("Elemetele sirului sunt:\n");
+    for(i=0;i<10;i++)
+    {
+        printf("sir[%d]=%.2f\n",i,sir[i]);
+    }
+    printf("Suma elementelor sirului este %.2f\n"
+           "Media elemetelor sirului este %.2f\n",suma,media);
+           return 0;
+           }                   
+           
+           int main()
+{
+    float sir[10],suma=0,media,min,max;
+    int i;
+    printf("Intoduceti elementele sirului\n");
+    for (i=0;i<10;i++)
+    {
+        printf("Elementul %d este ",i);
+        scanf("%f",&sir[i]);
+        suma=suma+sir[i];
+    }
+    min=sir[0];
+    max=sir[0];
+    media=suma/10;
+    system("CLS");
+    printf("Elemetele sirului sunt:\n");
+    for(i=0;i<10;i++)
+    {
+        printf("sir[%d]=%.2f\n",i+1,sir[i]);
+        if(min>sir[i])
+            min=sir[i];
+        if(max<sir[i])
+            max=sir[i];
+    }
+    printf("Suma elementelor sirului este %.2f\n"
+           "Media elemetelor sirului este %.2f\n"
+           "Minimul este %.2f \n maximul este %.2f",suma,media,min,max);
+
+           return 0;
+           }

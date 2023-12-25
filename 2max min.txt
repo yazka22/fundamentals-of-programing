@@ -1,0 +1,15 @@
+int main()
+{
+    float a,b,c,minim;
+    printf("introduceti primul numar ");
+    scanf("%f",&a);
+    printf("Introduceti al doilea numar");
+    scanf("%f",&b);
+    printf("Introduceti al treilea numar ");
+    scanf("%f",&c);
+    if(a<b && a<c) minim=a;
+    if(b<a && b<c) minim=b;
+    if(c<a && c<b) minim=c;
+    printf("Minimul dintre %.2f ,%.2f si %.2f este %.2f",a,b,c,minim);
+    return 0;
+}

@@ -1,0 +1,33 @@
+float delta(float a,float b,float c)
+{
+    return b*b-4*a*c;
+}
+void ec_gr_2(float a,float b, float c)
+{
+    float d;
+    d=delta(a,b,c);
+    if(d>=0)
+    {
+        printf("x1=%.2f\n x2=%.2f",(-b-sqrt(d))/(2*a),(-b-sqrt(d))/(2*a));
+    }
+    else {
+        printf("Nu avem solutii reale");
+    }
+}
+int main()
+{
+    float a,b,c;
+    printf("Intoduceti a");
+    scanf("%f",&a);
+    printf("Introduceti b");
+    scanf("%f",&b);
+    printf("Introduceti c");
+    scanf("%f",&c);
+    if(a==0)
+    {
+        if(b==0)printf("nu avem nici o ecuatie");
+        else printf("Avem ecuatie de gradul 1 x=%.2f",-c/b);
+    }
+    else{ec_gr_2(a,b,c);}
+    return 0;
+}

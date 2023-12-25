@@ -1,0 +1,37 @@
+int main()
+{
+    int nr,i;
+    do {
+        printf("Introduceti un numar");
+        scanf("%i",&nr);}
+        while(nr<=0);
+        for(i=2;i<(nr/2+1);i++)
+        {
+            if(nr%i==0)printf("%d este divizorul pentru %d\n",i,nr);
+        }
+        return 0;
+
+    }  
+    
+    
+    int main()
+{
+    int nr,i,m=1;
+    do {
+        printf("Introduceti un numar");
+        scanf("%i",&nr);}
+        while(nr<=0);
+        for(i=2;i<(nr/2+1);i++)
+        {
+            if(nr%i==0)
+            {
+                printf("%d este divizorul pentru %d\n",i,nr);
+                m=i;
+        }
+    }
+    if(m==1)printf("%d este numar prim \n",nr);
+    else
+        printf("Cel mai mare divizor este %d\n",m);
+        return 0;
+
+    }

@@ -1,0 +1,19 @@
+int main()
+{
+    int sir[10]={2,4,6,5,7,9,8,9,7,3},spar[10],simpar[10],i,p=0,q=0;
+    printf("Sirul este :2,4,6,5,7,9,8,9,7,3\n");
+    printf("Numere pare");
+    for(i=0;i<10;i++)
+    {
+        if(sir[i]%2==0)
+        {
+            spar[p++]=sir[i];
+            printf("%d, ",sir[i]);
+        }
+        else
+            simpar[q++]=sir[i];
+    }
+    printf("\nNumere impare");
+    for(i=0;i<q;i++) printf("%d, ",simpar[i]);
+    return 0;
+}

@@ -1,0 +1,39 @@
+int main()
+{
+    float suma=0,media,depunere;
+    int contor=0;
+    char c='d';
+    while(c=='d')
+    {
+        printf("Introduceti valoarea depunerii");
+        scanf("%f",&depunere);
+        suma+=depunere;
+        contor++;
+        printf("Mai aveti valori de introdus ? d/n\n");
+        scanf("%s",&c);
+    }
+    media=suma/(float)contor;
+    printf("Au fost facute %d depuneri , in valoare de %.2f.Media este %.2f",contor,suma,media);
+    return 0;
+}
+
+
+int main()
+{
+    float suma=0,media,depunere;
+    int contor=0;
+    char c;
+    do
+    {
+        printf("Introduceti valoarea depunerii(0 pentru terminare)");
+        scanf("%f",&depunere);
+        suma+=depunere;
+        contor++;
+
+    }
+    while (depunere!=0);
+    contor--;
+    media=suma/(float)contor;
+    printf("Au fost facute %d depuneri , in valoare totala de %.2f.Media este %.2f",contor,suma,media);
+    return 0;
+    }

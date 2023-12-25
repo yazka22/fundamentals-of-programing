@@ -1,0 +1,10 @@
+int main()
+{
+    float x,y,a;
+    printf("Cat este valoarea stiuta ?");
+    scanf("%f",&a);
+    x=2*a;
+    y=3*a;
+    printf("Numerele sunt a=%.2f , x=%.2f si y=%.2f",a,x,y);
+    return 0;
+}

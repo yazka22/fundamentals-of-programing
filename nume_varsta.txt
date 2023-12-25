@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a=1970,b=2019;
+    printf("Salut ma numesc Cristina\n sunt nascuta in anul %d si am %d",a,b-a);
+    return 0;
+}
